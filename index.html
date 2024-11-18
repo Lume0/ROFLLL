@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows XP Taskbar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Панель задач -->
+    <div class="taskbar">
+        <img src="taskbar_image.png" alt="Панель задач" class="taskbar-image">
+
+        <!-- Кнопка Пуск -->
+        <button class="start-button">
+            <img src="start_button.png" alt="Пуск">
+        </button>
+
+        <!-- Папки на панели задач -->
+        <ul class="folders">
+            <li>
+                <a href="#" id="folder-link">
+                    <img src="folder_icon.png" alt="Папка" id="folder-icon-normal">
+                    <img src="folder_icon_active.png" alt="Активная папка" id="folder-icon-active" style="display: none;">
+                </a>
+            </li>
+        </ul>
+        <!-- Надпись "EN" -->
+        <div class="language-indicator">EN</div>
+
+        <!-- Часы -->
+        <div class="clock-container">
+            <img src="your_clock_background.png" alt="" class="clock-bg" />
+            <span id="clock" class="clock">00:00</span>
+        </div>
+    </div>
+
+    <!-- Окно браузера -->
+    <div class="browser-window" id="browser-window">
+        <img src="browser_image.png" alt="Browser Image" class="browser-image">
+        <img src="your_overlay_image.jpg" alt="Overlay Image" class="browser-overlay-image">
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
